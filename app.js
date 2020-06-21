@@ -111,20 +111,22 @@ document.write("<h>ASSIGNMENT NO :6</h1>")
 // --------Q #15----------
 
 // var pass=prompt("Enter password:")
+// var numbers = /[0-9]/g
+// var alphabets = /[a-z]/g
 // if(pass.length==6){
 //     if(pass.slice(0,1)=="1"||pass.slice(0,1)=="2"||pass.slice(0,1)=="3"||pass.slice(0,1)=="4"||pass.slice(0,1)=="5"||pass.slice(0,1)=="6"||pass.slice(0,1)=="7"||pass.slice(0,1)=="8"||pass.slice(0,1)=="8"||pass.slice(0,1)=="9"||pass.slice(0,1)=="0"){
 //         alert("Password can'nt begin with number \n Please enter valid password..!!")
 //     }
 //     else{
 //         pass1=pass.slice(1)
-//         for(i=0;i<=pass1.length;i++)
-//             if(i=="1"||i=="2"||i=="3"||i=="4"||i=="5"||i=="6"||i=="7"||i=="8"||i=="9"||i=="0"){
-//                 alert("your password: "+pass)
-//             }
-//             else{
-//                 alert("Password must contain numbers")
-//             }
+//         if( pass1.match(numbers) == null || pass1.match(alphabets)==null){ 
+//          alert( "invalid password ")}
+//         else{
+//             alert("your password: "+pass)
+//         }
+        
 //     }
+
 // }
 // else{
 //     alert("Password must atleast 6 character long..!!")
